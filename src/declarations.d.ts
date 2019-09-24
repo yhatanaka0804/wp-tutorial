@@ -1,0 +1,1 @@
+declare const gtag: (ACTION, GA_MEASUREMENT_ID, OPTION) => void;
