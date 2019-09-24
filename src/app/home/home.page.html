@@ -7,10 +7,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let p of posts; trackBy: trackByFn" routerLink="/article/{{p.ID}}">
-    <ion-header>
-      <ion-card-subtitle>{{p.date | date: "yyyy年mm月dd日"}}</ion-card-subtitle>
-      <ion-card-title>{{p.title}}</ion-card-title>
-    </ion-header>
+  <ion-card *ngFor="let p of posts; trackBy: trackByFn" routerLink="/home/{{p.ID}}">
+    <app-wp-head title="{{p.title}}" date="{{p.date}}"></app-wp-head>
   </ion-card>
 </ion-content>

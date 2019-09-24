@@ -16,10 +16,7 @@
   </ion-card>
 
   <ion-card *ngIf="post.ID">
-    <ion-card-header>
-       <ion-card-subtitle>{{post.date | date: "yyyy年mm月dd日"}}</ion-card-subtitle>
-       <ion-card-title>{{post.title}}</ion-card-title>
-     </ion-card-header>
+    <app-wp-head title="{{post.title}}" date="{{post.date}}"></app-wp-head>
   </ion-card>
   
   <!--<div class="ion-padding">{{post.content}}</div>-->
